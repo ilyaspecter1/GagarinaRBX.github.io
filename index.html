@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПОЛИНА ГАГАРИНА 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- СТАРТОВАЯ ЗАСТАВКА (PRELOADER) -->
+    <div id="sitePreloader" class="cyber-preloader">
+        <div class="preloader-blur-glow"></div>
+        <div class="preloader-box">
+            <div class="luxury-logo">
+                <span class="gold-w">L</span><span class="white-w">W</span>
+            </div>
+            <div class="luxury-title">LV NOVA</div>
+            <div class="luxury-loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="luxury-status">SECURE CONNECTION...</div>
+        </div>
+    </div>
+
+    <!-- ПРОМЕЖУТОЧНЫЙ ЛОАДЕР ПЕРЕХОДА -->
+    <div id="cityTransitionLoader" class="cyber-preloader" style="display: none; background: rgba(5, 3, 10, 0.98);">
+        <div class="preloader-box">
+            <div class="quantum-spinner">
+                <div class="q-dot"></div><div class="q-dot"></div><div class="q-dot"></div><div class="q-dot"></div>
+            </div>
+            <div class="luxury-title" style="font-size: 13px; color: #00f0ff; text-shadow: 0 0 15px rgba(0,240,255,0.6);">СИНХРОНИЗАЦИЯ С АРЕНЫ...</div>
+        </div>
+    </div>
+
+    <div class="dynamic-stage-bg"></div>
+    <div class="deep-ambient-shadow"></div>
+
+    <!-- ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ -->
+    <header class="glass-header">
+        <div class="header-container">
+            <div class="brand-name">ПОЛИНА ГАГАРИНА</div>
+            <nav class="cyber-nav">
+                <a href="#tourSection" class="nav-item active">ШОУ «НАВСЕГДА»</a>
+                <a href="https://t.me/sunshineent_1987" target="_blank" class="nav-item tg-glow">TELEGRAM</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ HERO-БАННЕР -->
+    <section class="mega-hero-section">
+        <div class="hero-card-glow">
+            <div class="laser-beam-1"></div>
+            <div class="laser-beam-2"></div>
+            <div class="premium-artist-photo"></div>
+            
+            <div class="hero-card-content">
+                <div class="screenshot-tag"><span class="pink-bullet">•</span> ПРЕМЬЕРА ВИРТУАЛЬНОГО ТУРА 2026</div>
+                <h1 class="screenshot-main-title">ПОЛИНА ГАГАРИНА</h1>
+                <div class="screenshot-subtitle">НОВОЕ МАСШТАБНОЕ ШОУ</div>
+                <div class="screenshot-huge-title">НАВСЕГДА</div>
+                <div class="hero-age-limit">16+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГЛАВНЫЙ ИНТЕРАКТИВНЫЙ БЛОК -->
+    <div class="main-container" id="tourSection">
+        
+        <!-- ЭКРАН 1: СПИСОК ГАСТРОЛЕЙ -->
+        <section class="content-view-panel" id="scheduleScreen">
+            <div class="panel-header-badge">OFFICIAL TOUR SCHEDULE</div>
+            <div class="panel-info-banner">
+                <p>Все вопросы по возврату и интеграциям направляйте официальному организатору на почту: <a href="#" id="infoBannerEmail" class="accent-gold-text">...</a></p>
+            </div>
+            <div class="premium-tour-list" id="tourTableBody"></div>
+        </section>
+
+        <!-- ЭКРАН 2: КАССА БРОНИРОВАНИЯ -->
+        <section class="content-view-panel" id="bookingScreen" style="display: none;">
+            <div class="panel-header-badge">SECURE TICKET TERMINAL</div>
+            <div class="back-action-row">
+                <button id="backToScheduleBtn" class="btn-neo-back">← НАЗАД К ВЫБОРУ ГОРОДА</button>
+            </div>
+
+            <div class="cinema-booking-card">
+                <div class="cinema-card-head">
+                    <h2 class="terminal-title">БРОНИРОВАНИЕ: <span id="targetCityLabel" class="neon-cyan-glow">...</span></h2>
+                    <p class="terminal-sub">Электронные пригласительные бесплатны. Поддержка: <a href="#" id="terminalSupportEmail" class="accent-gold-text">...</a></p>
+                </div>
+
+                <form id="orderForm">
+                    <div class="cyber-input-group">
+                        <label class="cyber-label" for="robloxNick">УКАЖИТЕ ВАШ ROBLOX NICKNAME (ONLY ENGLISH)</label>
+                        <div class="input-wrapper">
+                            <input class="cyber-input-control" type="text" id="robloxNick" placeholder="Например: Builderman" required autocomplete="off">
+                            <div class="input-glow-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="stadium-arena-wrapper">
+                        <div class="stadium-stage-block">
+                            <div class="stage-core-neon"><span>ROBLOX MAIN STAGE • LIVE CONCERT</span></div>
+                        </div>
+
+                        <div class="stadium-amphitheater">
+                            <div class="stadium-seats-3d-box">
+                                <div id="seatsMatrix"></div>
+                            </div>
+                        </div>
+
+                        <div class="stadium-legend-flex">
+                            <div class="lg-block"><span class="lg-dot dot-free"></span> Свободно</div>
+                            <div class="lg-block"><span class="lg-dot dot-vip"></span> Золотой VIP</div>
+                            <div class="lg-block"><span class="lg-dot dot-sel"></span> Ваше место</div>
+                            <div class="lg-block"><span class="lg-dot dot-sold"></span> Занято</div>
+                            <div class="lg-block"><span class="lg-camera-icon">📹</span> Камера вещания</div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="seatData" required>
+                    <input type="hidden" id="seatType" value="Стандарт">
+
+                    <div class="terminal-action-footer">
+                        <div class="terminal-price-box">
+                            <span class="price-old-strike">Организационный сбор: 4,500 ₽</span>
+                            <span class="price-free-neon">0 ROBUX (БЕСПЛАТНО)</span>
+                        </div>
+                        <button type="submit" class="btn-neon-submit">АКТИВИРОВАТЬ БИЛЕТ</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- МOДАЛЬНЫЙ СЛОЙ ТРАНЗАКЦИИ -->
+    <div class="modal-layer" id="txModal">
+        <div class="glass-modal-window" id="txModalContent"></div>
+    </div>
+
+    <!-- ПОДКЛЮЧЕНИЕ СТРОГО В ДАННОМ ПОРЯДКЕ -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
